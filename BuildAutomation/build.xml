@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="BuildAutomation" default="delele" basedir=".">
+
+<target name="delete">
+
+<delete dir="bin"></delete>
+<delete dir="bin"></delete>
+
+
+<echo>WELCOME</echo>
+
+
+
+
+</target>
+
+
+
+
+
+</project>
