@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project name="BuildAutomation" default="delete" basedir=".">
+<project name="BuildAutomation" default="compile" basedir=".">
 
 
 <!--TO delete A FOLDER OR FILE -->
- -->
+
 
 <target name="delete">
 
 <delete dir="bin"></delete>
 
 
-<echo>WELCOME</echo>
+<echo>deleted</echo>
 
 
 
@@ -20,14 +20,31 @@
 
 <!--TO CREATE A FOLDER OR FILE -->
 
-<target name="create">
+<target name="create" depends="delete">
 
 
-<mkdir dir="bin">       </mkdir>
+<mkdir dir="bin"></mkdir>
+
+<echo>created</echo>
+
 
 
 </target>
 
+
+
+
+
+<target name="compile" depends="create">
+
+
+	<javac srcdir="Z:\Ahmed Ali\BuildAutomation\src\buildAutomation" destdir="Z:\Ahmed Ali\BuildAutomation\bin"/>
+
+
+<echo>compiled</echo>
+
+
+</target>
 
 
 
