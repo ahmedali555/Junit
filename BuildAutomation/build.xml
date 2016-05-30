@@ -2,6 +2,10 @@
 
 <project name="BuildAutomation" default="delete" basedir=".">
 
+
+<!--TO delete A FOLDER OR FILE -->
+ -->
+
 <target name="delete">
 
 <delete dir="bin"></delete>
@@ -14,6 +18,15 @@
 
 </target>
 
+<!--TO CREATE A FOLDER OR FILE -->
+
+<target name="create">
+
+
+<mkdir dir="bin">       </mkdir>
+
+
+</target>
 
 
 
