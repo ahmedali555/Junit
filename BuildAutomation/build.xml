@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project name="BuildAutomation" default="delele" basedir=".">
+<project name="BuildAutomation" default="delete" basedir=".">
 
 <target name="delete">
 
-<delete dir="bin"></delete>
 <delete dir="bin"></delete>
 
 
